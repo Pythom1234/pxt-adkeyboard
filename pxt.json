@@ -1,5 +1,5 @@
 {
-    "name": "pxt-ADKeyboard",
+    "name": "ADKeyboard",
     "description": "",
     "dependencies": {
         "core": "*",
