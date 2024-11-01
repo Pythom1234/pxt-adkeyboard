@@ -21,7 +21,7 @@ namespace ADKeyboard {
             return true
         } else if (a >= 130 && a <= 150 && k == 4) {
             return true
-        } else if (a >= 530 && a <= 580 && k == 5) {
+        } else if (a >= 530 && a <= 590 && k == 5) {
             return true
         } else{
             return false
@@ -41,7 +41,7 @@ namespace ADKeyboard {
             return "C"
         } else if (a >= 130 && a <= 150) {
             return "D"
-        } else if (a >= 530 && a <= 580) {
+        } else if (a >= 530 && a <= 590) {
             return "E"
         } else {
             return ""
