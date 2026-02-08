@@ -13,17 +13,17 @@ namespace ADKeyboard {
     //% block.loc.cs="klávesa $k je stisknuta na ADKeyboard na pinu %p"
     export function adKeyboardIsPressed(k: ADKeys, p: AnalogPin): boolean {
         let a: number = pins.analogReadPin(p);
-        if (a < 10 && k == 1) {
+        if (a < 20 && k == 1) {
             return true
-        } else if (a >= 40 && a <= 60 && k == 2) {
+        } else if (a >= 30 && a < 70 && k == 2) {
             return true
-        } else if (a >= 80 && a <= 110 && k == 3) {
+        } else if (a >= 70 && a < 100 && k == 3) {
             return true
-        } else if (a >= 130 && a <= 150 && k == 4) {
+        } else if (a >= 100 && a < 150 && k == 4) {
             return true
-        } else if (a >= 530 && a <= 590 && k == 5) {
+        } else if (a >= 230 && a < 300 && k == 5) {
             return true
-        } else{
+        } else {
             return false
         }
     }
@@ -33,15 +33,15 @@ namespace ADKeyboard {
     //% block.loc.cs="klávesa stisknuta na ADKeyboard na pinu %p"
     export function adKeyboardGetPressed(p: AnalogPin): string {
         let a: number = pins.analogReadPin(p);
-        if (a < 10) {
+        if (a < 20) {
             return "A"
-        } else if (a >= 40 && a <= 60) {
+        } else if (a >= 30 && a < 70) {
             return "B"
-        } else if (a >= 80 && a <= 110) {
+        } else if (a >= 70 && a < 100) {
             return "C"
-        } else if (a >= 130 && a <= 150) {
+        } else if (a >= 100 && a < 150) {
             return "D"
-        } else if (a >= 530 && a <= 590) {
+        } else if (a >= 230 && a < 300) {
             return "E"
         } else {
             return ""
